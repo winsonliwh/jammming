@@ -9,7 +9,11 @@
 /coverage
 
 # production
-/build
+# set homepage in package.json for delopying to github.io, so remove this line: /build
+# after checking Find out more about deployment here: https://cra.link/deployment
+# https://create-react-app.dev/docs/deployment/#serving-the-same-build-from-different-paths
+# It is a better solution for "Serving the Same Build from Different Paths"
+# By using   "homepage": ".", in package.json
 
 # misc
 .DS_Store
