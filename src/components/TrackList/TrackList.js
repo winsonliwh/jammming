@@ -1,12 +1,11 @@
-import './TrackList.css'
+import './TrackList.css';
 
-import Track from '../Track/Track'
+import Track from '../Track/Track';
 
 const TrackList = ({ tracks, onAdd, onRemove, isRemoval }) => {
     return (
         <div className="TrackList">
-            {
-                tracks.map(track => {
+            {tracks.map(track => {
                     const { name, artist, album, id } = track;
                     return (
                         <Track 
@@ -21,11 +20,10 @@ const TrackList = ({ tracks, onAdd, onRemove, isRemoval }) => {
                             isRemoval={isRemoval}
 
                         />
-                    )
-                })
-            }
+                    );
+                })}
         </div>
     )
 }
 
-export default TrackList
+export default TrackList;

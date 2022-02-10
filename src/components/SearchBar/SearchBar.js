@@ -1,16 +1,16 @@
-import { useState } from 'react/cjs/react.development'
-import './SearchBar.css'
+import { useState } from 'react/cjs/react.development';
+import './SearchBar.css';
 
 const SearchBar = ({ onSearch }) => {
 
-    const [term, setTerm] = useState('')
+    const [term, setTerm] = useState('');
 
     const search = () => {
-        onSearch(term)
+        onSearch(term);
     }
 
     const handleTermChange = e => {
-        setTerm(e.target.value)
+        setTerm(e.target.value);
     }
 
     return (
@@ -21,4 +21,4 @@ const SearchBar = ({ onSearch }) => {
     )
 }
 
-export default SearchBar
+export default SearchBar;
